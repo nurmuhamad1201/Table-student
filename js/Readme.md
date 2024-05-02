@@ -1,2 +1,2 @@
 # table students
-![](/icons/ыкь2.jpg)
+![Table](/icons/ыкь2.jpg)
