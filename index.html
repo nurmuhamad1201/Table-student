@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+ <header class="head">
+    <div class="divsel"> 
+    <div class="divsearch">
+        <input checked="" class="checkbox" type="checkbox"> 
+        <div class="mainbox">
+            <div class="iconContainer">
+                <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+            </div>
+         <input class="search_input" placeholder="search" type="text">
+        </div>
+    </div>
+   <select name="" id="select">
+        <optgroup label="Choose status">
+            <option value="all">All</option>
+            <option value="online">Active</option>
+            <option value="offline">Inactive</option>
+        </optgroup>
+        </select>
+     <select name="" id="selectc">
+        <optgroup label="Choose Place">
+            <option value="all">all</option>
+            <option value="0">Sadbarg</option>
+            <option value="11">Prafsoyuz</option>
+            <option value="2">Kafedra</option>
+            <option value="3">Sirk</option>
+            <option value="4">Khujand</option>
+        </optgroup>
+        </select></div>
+    
+
+    
+<button class="button" type="button">
+    <span class="button__text">Add Item</span>
+    <span class="button__icon"><svg class="svg" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></span>
+  </button>
+ </header>
+
+
+    <table>
+        <thead>
+            <tr class="salom">
+                <th>ID</th>
+                <th>Group Name</th>
+                <th>Description</th>
+                <th>Recuired student</th>
+                <th>Branch</th>
+                <th>Starus</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+       
+    </table>
+
+    <dialog class="giaad">
+        <h2>Add User</h2>
+        <button class="closeAd">X</button>
+        <form class="formAd">
+            <input placeholder="Group Name" name="group" type="text">
+            <input placeholder="Description" name="deck" type="text">
+            <input placeholder="Required student" name="student" type="text">
+            <select name="select" id="">
+                <optgroup label="Choose Status">
+                    <option value="1">Started</option>
+                    <option value="0">Finished</option>
+                </optgroup>
+            </select>
+            <select name="stat" id="">
+                <optgroup label="Choose Place">
+                    <option value="0">Sadbarg</option>
+                    <option value="1">Prafsoyuz</option>
+                    <option value="2">Kafedra</option>
+                    <option value="3">Sirk</option>
+                    <option value="4">Khujand</option>
+                </optgroup>
+            </select>
+            <button type="submit">Add</button>
+        </form>
+        
+    </dialog>
+
+    <dialog class="diaEdit">
+        <h2>Edit User</h2>
+        <button class="closeEdit">X</button>
+        <form class="formEdit">
+            <input placeholder="Group Name" name="group" type="text">
+            <input placeholder="Description" name="deck" type="text">
+            <input placeholder="Required student" name="student" type="text">
+            <select name="select" id="">
+                <optgroup label="Choose Status">
+                    <option value="1">Started</option>
+                    <option value="0">Finished</option>
+                </optgroup>
+            </select>
+            <select name="stat" id="">
+                <optgroup label="Choose Place">
+                    <option value="0">Sadbarg</option>
+                    <option value="1">Prafsoyuz</option>
+                    <option value="2">Kafedra</option>
+                    <option value="3">Sirk</option>
+                    <option value="4">Khujand</option>
+                </optgroup>
+            </select>
+            <button type="submit">Edit</button>
+        </form>
+        <button class="closeEd">Cencel</button>
+    </dialog>
+
+    <dialog class="dialoginfo">
+        <h2>Info</h2>
+        <h1 class="nameIn"></h1>
+        <h4 class="groupIn"></h4>
+        <p class="deckIn"></p>
+        <p class="studentIn"></p>
+        <p class="statusIn"></p>
+        <p class="placeIn"></p>
+
+        <button class="closeInfo">X</button>
+    </dialog>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
